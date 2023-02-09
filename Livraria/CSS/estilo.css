@@ -1,0 +1,266 @@
+
+body{
+	margin: 0;
+	background-color: #A52A2A;
+}
+
+#logo{
+	margin: 3px;
+	width: 60px;
+	height: 60px;
+}
+
+.menu{
+	top: 0;
+	background-color: #8B0000;
+	width: 100%;
+	height: 70px;
+	z-index: 1;
+	overflow: auto;
+	position: fixed;
+}
+
+.container{
+	margin: 150px;
+}
+
+.imagemLogo{
+	float: left;
+}
+
+.lista{
+	float: right;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: arial;
+	list-style: none;
+	padding-top: 10px;
+	padding-right: 100px;
+}
+
+li{
+	display: inline;
+	padding-left: 30px;
+}
+
+a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #FF8C00;
+	background-color: #B22222;
+	padding: 20px 10px 20px 10px;
+}
+
+#promocoes{
+	margin-top: 20px;
+	padding-top: 50px;
+	/*background-color: #DC143C;*/
+	width: 100%;
+	height: 700px;
+}
+
+#maisVendidos{
+	margin-top: 20px;
+	padding-top: 50px;
+	/*background-color: #DC143C;*/
+	width: 100%;
+	height: 700px;
+}
+
+#livros{
+	margin-top: 20px;
+	padding-top: 50px;
+	/*background-color: #FF8C00;*/
+	width: 100%;
+	height: 700px;
+}
+
+#formulario{
+	margin-top: 20px;
+	padding-top: 50px;
+	width: 100%;
+	height: 700px;
+}
+
+#contato{
+	margin-top: 20px;
+	padding-top: 50px;
+	/*background-color: #FFD700;*/
+	width: 100%;
+	height: 700px;
+}
+/*
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}*/

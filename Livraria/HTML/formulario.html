@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Formulario</title>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="imagemLogo">
+        <img id="logo" src="../imagem/logo-livraria.png" alt="logo">
+      </div>
+      <div class="lista">
+        <ul>
+          <li><a href="index.html">Menu</a></li>
+          <li><a href="promocoes.html">Promoções</a></li>
+          <li><a href="maisVendidos.html">Os mais vendidos</a></li>
+          <li><a href="livros.html">Livros</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="formulario">
+      <h1>Realizar compra</h1>
+      <form action="index.html" method="post">
+        <div class="">
+          <label>Nome do livro: </label>
+          <label for="">
+            <input type="text" required placeholder="Digite o nome do livro">
+          </label>
+        </div>
+        <div class="">
+          <label>Endereço para entrega: </label>
+          <label>
+            <input type="text" required placeholder="Digite o seu endereço">
+          </label>
+        </div>
+        <div>
+          <label>Escolha a forma de pagamento: </label>
+          <label>
+            <input type="radio" name="cartão" value="Cartao"> <label>Cartão<label>
+          <label>
+            <input type="radio" name="dinheiro" value="Dinheiro"> <label>Dinheiro<label>
+        </div>
+        <div class="">
+          <input class="btn btn-dark" type="submit" value="Comprar">
+          <input class="btn btn-dark" type="reset" value="Limpar">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
