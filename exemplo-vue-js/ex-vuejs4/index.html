@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exemplo VueJ 4</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Aluno: {{name}}</h1>
+      <h2 v-if="status">Status do aluno: ativo</h2>
+      <h2 v-if="!status">Status do aluno: inativo</h2>
+      <p>Nota 1: {{grade1}}
+      <br>Nota 2: {{grade2}}
+      <br>Media: {{avarage}}</p>
+
+      <h3>Conceito</h3>
+      <p v-if="avarage >= 9">A</p>
+      <p v-else-if="avarage >= 8">B</p>
+      <p v-else-if="avarage >= 6">C</p>
+      <p v-else="avarage >0" >D</p>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>

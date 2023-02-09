@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exemplo VueJ 5</title>
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li v-for="name in names">{{name}}</li>
+      </ul>
+      <ol>
+        <li v-for="name in names">{{name}}</li>
+      </ol>
+      <div v-for="name in names" style="background-color: #f98000; width: 60px; height: 20px">
+        <p>{{name}}</p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>
